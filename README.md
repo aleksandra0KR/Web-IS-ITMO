@@ -1,4 +1,4 @@
-[stite](https://aleksandra0kr.github.io/Web-IS-ITMO/)
+[site](https://aleksandra0kr.github.io/Web-IS-ITMO/)
 
 Крючкова Александра Владимировна M3202
 
