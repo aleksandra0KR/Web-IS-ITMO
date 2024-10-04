@@ -16,39 +16,35 @@ header h1 {
     margin-bottom: 20px;
 }
 
-header,
-footer {
+header, footer {
     background-color: #5a2328;
-    padding: 20px 0;
+    padding: 20px;
     text-align: center;
 }
 
-nav ul {
-    list-style-type: none;
-    padding: 0;
-}
-
-nav ul li {
-    display: inline;
-    margin: 0 10px;
-}
-
-nav ul li a {
-    color: #fff;
-    text-decoration: none;
-    transition: color 0.3s;
+ul {
+    list-style-type: disc;
+    padding-left: 20px;
+    margin-bottom: 20px;
 }
 
 nav ul li a:hover {
     color: #e6aa68;
 }
 
+li {
+    margin-bottom: 10px;
+}
+
+ol {
+    padding-left: 10px;
+}
+
 main {
     padding: 20px;
 }
 
-section,
-article, aside{
+section, article, aside {
     margin-bottom: 20px;
     padding: 20px;
     border: 1px solid #e6aa68;
@@ -57,11 +53,7 @@ article, aside{
     border-radius: 8px;
 }
 
-h1,
-h2,
-h3,
-h4,
-h5 {
+h1, h2, h3, h4, h5 {
     color: #5a2328;
     padding-bottom: 10px;
     font-weight: bold;
@@ -69,6 +61,16 @@ h5 {
 
 p {
     line-height: 1.6;
+}
+
+pre {
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    background-color: #f5f5f5;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-family: 'Courier New', Courier, monospace;
 }
 
 .header__title {
@@ -99,21 +101,10 @@ p {
     font-size: 16px;
 }
 
-.aside__art {
-    text-align: center;
-    font-family: 'Courier New', Courier, monospace;
-}
-
 .footer__contact {
     margin: 5px 0;
     color: #fff;
     text-align: center;
-}
-
-#images {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
 }
 
 .image {
@@ -122,35 +113,12 @@ p {
     transition: transform 0.3s;
 }
 
+#images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
 #images img:hover {
     transform: scale(1.05);
-}
-
-/* Структурирование списков <ul> и <li> */
-ul {
-    list-style-type: disc;
-    padding-left: 20px;
-    margin-bottom: 20px;
-}
-
-li {
-    margin-bottom: 10px;
-}
-
-ul ul {
-    list-style-type: circle;
-    padding-left: 30px;
-}
-
-ul ul li {
-    margin-bottom: 5px;
-}
-pre {
-    white-space: pre-wrap;
-    word-wrap: break-word;
-    background-color: #f5f5f5;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-family: 'Courier New', Courier, monospace;
 }
