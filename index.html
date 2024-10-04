@@ -1,38 +1,53 @@
-<!DOCTYPE html>
-
+<!doctype html>
 <html lang="ru">
-
 <head>
+    <link rel="stylesheet" href="stylesheet/style.css"/>
     <title>Art corner</title>
-    <meta charset="UTF-8">
-    <meta name="keywords" content="Искусство, Марк Захарович Шагал, авангард">
-    <meta name="description" content="Описание работ Марка Захаровича Шагала и их смысла">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="keywords" content="Искусство, Марк Захарович Шагал, авангард"/>
+    <meta
+            name="description"
+            content="Описание работ Марка Захаровича Шагала и их смысла"
+    />
 </head>
 
 <body>
 <header>
-    <h1>Описание работ Марка Захаровича Шагала и их смысла</h1>
-    <nav>
-        <ul>
-            <li><a href="index.html">Главная страница</a></li>
-            <li><a href="#biography">Биография</a></li>
-            <li><a href="#works">Работы</a></li>
-            <li><a href="#contacts">Контакты</a></li>
+    <h1 class="header__title">
+        Описание работ Марка Захаровича Шагала и их смысла
+    </h1>
+    <nav id="menu" aria-label="Main Navigation">
+        <ul class="nav__list">
+            <li class="nav__item">
+                <a href="index.html" class="nav__link">Главная страница</a>
+            </li>
+            <li class="nav__item">
+                <a href="#biography" class="nav__link">Биография</a>
+            </li>
+            <li class="nav__item">
+                <a href="#works" class="nav__link">Работы</a>
+            </li>
+            <li class="nav__item">
+                <a href="#contacts" class="nav__link">Контакты</a>
+            </li>
         </ul>
     </nav>
 </header>
 
 <main>
     <section id="biography">
-        <h2>О художнике</h2>
-        <p><em>Марк Заха́рович Шага́л — русский и французский художник</em>. Помимо графики и живописи занимался также
-            сценографией, писал стихи на идише. Один из самых известных представителей художественного авангарда XX
-            века.</p>
+        <h2 class="section__title">О художнике</h2>
+        <p class="section__text">
+            <em>Марк Заха́рович Шага́л — русский и французский художник</em>. Помимо
+            графики и живописи занимался также сценографией, писал стихи на идише.
+            Один из самых известных представителей художественного авангарда XX
+            века.
+        </p>
     </section>
 
-
     <section id="works">
-        <h3>Работы живописца по годам</h3>
+        <h3 class="section__title">Работы живописца по годам</h3>
         <ul>
             <li>До 1907 года (Витебск)</li>
             <ol>
@@ -66,14 +81,17 @@
             </ol>
         </ul>
     </section>
-
+    <section id="images">
+        <img class="image" src="img/1.jpg" alt="Зеленый уличный скрипач"/>
+        <img class="image" src="img/2.jpg" alt="Жонглер"/>
+        <img class="image" src="img/3.jpg" alt="Мадонна и сани "/>
+    </section>
     <article>
-            <h4>Формула картин Шагала</h4>
-            <p>
-                Любовь<sup>2</sup>
-                + Семья<sup>2</sup>
-                = <strong>Великолепные картины</strong>
-            </p>
+        <h4 class="section__title">Формула картин Шагала</h4>
+        <p class="section__text">
+            Любовь<sup>2</sup> + Семья<sup>2</sup> =
+            <strong>Великолепные картины</strong>
+        </p>
     </article>
 
     <aside>
@@ -102,30 +120,22 @@
     </aside>
 
     <section>
-        <h4>Цитата</h4>
-        <p>На сайте Культура.рф приводят цитату Шагала: <q cite="https://www.culture.ru/persons/8917/mark-shagal">Когда
-            я
-            брал литографский камень или медную доску, мне чудилось, что у меня в руках талисман. Мне казалось, что я
-            смогу
-            поместить на них все свои печали и радости…</q></p>
-    </section>
-
-    <section>
-      <h5>Рандомный кусок кода для пункта лабы)</h5>
-        <pre><code>
-for i:=0; i < 3; i++ {
-  fmt.Println("Hello World") }
-        </code></pre>
+        <h4 class="section__title">Цитата</h4>
+        <p class="section__text">
+            На сайте Культура.рф приводят цитату Шагала:
+            <q cite="https://www.culture.ru/persons/8917/mark-shagal"
+            >Когда я брал литографский камень или медную доску, мне чудилось,
+                что у меня в руках талисман. Мне казалось, что я смогу поместить на
+                них все свои печали и радости…</q
+            >
+        </p>
     </section>
 </main>
 
-<footer>
-    <hr>
-    <section id="contacts">
-        <p>Телефон: +1 111 111-1111</p>
-        <p>Почта: cultrf@mkrf.ru</p>
-        <p>Нашли опечатку: молодец</p>
-    </section>
+<footer id="contacts">
+    <p class="footer__contact">Телефон: +1 111 111-1111</p>
+    <p class="footer__contact">Почта: cultrf@mkrf.ru</p>
+    <p class="footer__contact">Нашли опечатку: молодец</p>
 </footer>
 </body>
 </html>
