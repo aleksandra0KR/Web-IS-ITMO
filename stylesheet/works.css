@@ -1,0 +1,14 @@
+.images {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+}
+
+.images img:hover {
+    transform: scale(1.05);
+}
+.image{
+    height: 500px;
+    width: 400px;
+}

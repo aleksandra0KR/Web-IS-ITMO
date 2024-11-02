@@ -1,0 +1,19 @@
+.contsctList {
+    list-style-type: none; /* Убираем маркеры списка */
+    padding: 0; /* Убираем отступы */
+}
+
+.contactPoint {
+    margin: 10px 0;
+    font-size: 20px/* Добавляем отступы между элементами списка */
+}
+
+.contactHref {
+    text-decoration: none; /* Убираем подчеркивание ссылок */
+    color: black; /* Цвет ссылок */
+
+}
+.contactHref:hover {
+    text-decoration: underline; /* Подчеркивание при наведении */
+    text-decoration-color: #e6aa68;
+}
