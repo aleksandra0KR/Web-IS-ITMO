@@ -1,19 +1,57 @@
 .contsctList {
-    list-style-type: none; /* Убираем маркеры списка */
-    padding: 0; /* Убираем отступы */
+    list-style-type: none;
+    padding: 0;
 }
 
 .contactPoint {
     margin: 10px 0;
-    font-size: 20px/* Добавляем отступы между элементами списка */
+    font-size: 20px
 }
 
 .contactHref {
-    text-decoration: none; /* Убираем подчеркивание ссылок */
-    color: black; /* Цвет ссылок */
-
+    text-decoration: none;
+    color: black;
 }
+
 .contactHref:hover {
-    text-decoration: underline; /* Подчеркивание при наведении */
+    text-decoration: underline;
     text-decoration-color: #e6aa68;
+}
+
+form {
+    margin-top: 20px;
+}
+
+label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+input[type="text"],
+input[type="email"] {
+    width: 50%;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: transparent;
+    border: 2px solid black;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+button[type="submit"] {
+    background-color: pink;
+    color: white;
+    border: none;
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+button[type="submit"]:hover {
+    background-color: hotpink;
+}
+
+#userData {
+    margin-top: 20px;
 }
