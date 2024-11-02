@@ -1,5 +1,4 @@
-.images1 {
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.7);
-    margin: 10px;
-    transition: transform 0.3s;
+.imageShagal{
+    height: 450px;
+    width: 400px;
 }
