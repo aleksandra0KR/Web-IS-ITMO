@@ -2,13 +2,49 @@
     display: flex;
     justify-content: space-between;
     flex-wrap: wrap;
-
 }
 
 .images img:hover {
     transform: scale(1.05);
 }
-.image{
+
+.image {
     height: 500px;
     width: 400px;
+}
+
+.preloader {
+    display: block;
+    margin: 20px auto;
+
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border-width: 3px;
+    border-style: solid;
+    border-color: pink transparent transparent transparent;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.comment {
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin: 10px 0;
+}
+
+.comment h3 {
+    margin: 0;
+}
+
+.comment p {
+    margin: 5px 0;
 }
