@@ -3,23 +3,22 @@
 <head>
     <link rel="stylesheet" href="stylesheet/style.css"/>
     <link rel="stylesheet" href="stylesheet/works.css"/>
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
+    <link rel='stylesheet' href='http://codeseven.github.io/toastr/build/toastr.min.css'>
+
     <title>Art corner</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
     <meta name="keywords" content="Искусство, Марк Захарович Шагал, авангард"/>
-    <meta
-            name="description"
-            content="Описание работ Марка Захаровича Шагала и их смысла"
-    />
-    <script src="script/script.js" defer></script>
-    <script src="script/toster.js"></script>
+    <meta name="description" content="Описание работ Марка Захаровича Шагала и их смысла"/>
+
+    <script src="script/script.js"></script>
+    <script src="script/toastr.js"></script>
+    <script src="script/swiper.js"></script>
+    <script src="script/fetchData.js"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
     <script src="http://codeseven.github.io/toastr/build/toastr.min.js"></script>
-    <link href='http://codeseven.github.io/toastr/build/toastr.min.css' rel='stylesheet' type="text/css">
-
-    <script src="script/fetchData.js" defer></script>
-
-
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 </head>
 
 <body>
@@ -46,23 +45,23 @@
 </header>
 
 <main>
-    <section class="images" id="images1">
-        <img class="image" src="img/work1.jpg" alt="Зеленый уличный скрипач"/>
-        <img class="image" src="img/work2.jpg" alt="Жонглер"/>
-        <img class="image" src="img/work3.jpg" alt="Мадонна и сани "/>
-    </section>
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide">
+                <img class="image" src="img/work1.jpg" alt="Зеленый уличный скрипач" data-swiper-parallax="-200">
+            </div>
+            <div class="swiper-slide">
+                <img class="image" src="img/work2.jpg" alt="Жонглер"/>
+            </div>
+            <div class="swiper-slide">
+                <img class="image" src="img/work3.jpg" alt="Мадонна и сани"/>
+            </div>
+        </div>
 
-    <section class="images" id="images2">
-        <img class="image" src="img/work4.jpg" alt="Зеленый уличный скрипач"/>
-        <img class="image" src="img/work5.jpg" alt="Жонглер"/>
-        <img class="image" src="img/work6.jpg" alt="Мадонна и сани "/>
-    </section>
-
-    <section class="images" id="images3">
-        <img class="image" src="img/work7.jpg" alt="Зеленый уличный скрипач"/>
-        <img class="image" src="img/2.jpg" alt="Жонглер"/>
-        <img class="image" src="img/3.jpg" alt="Мадонна и сани "/>
-    </section>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
 
     <div class="preloader" id="preloader"></div>
     <div id="comments"></div>
@@ -73,7 +72,5 @@
     <p class="footer__contact">Почта: cultrf@mkrf.ru</p>
     <p class="footer__contact">Нашли опечатку: молодец</p>
 </footer>
-
-<script src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/toastr.min.js"></script>
 </body>
 </html>
