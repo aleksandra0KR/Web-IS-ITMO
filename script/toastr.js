@@ -1,3 +1,4 @@
+// Инициализация Toastr уведомлений после загрузки DOM
 document.addEventListener("DOMContentLoaded", function () {
-    toastr.success("Go!", "Please");
+    toastr.success("Welcome", "Hello!"); // Отображение уведомления успеха
 })
